@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2C3E50;
+    color: #fff;
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-txt1 {
+    margin-left: 2.25rem;
+    font-size: 1.85rem;
+}
+
+.nav-txt1:hover {
+    cursor: pointer;
+}
+
+.sections {
+    margin-left: 53.5rem;
+    font-size: 1.05rem;
+}
+
+.nav-txt3, .nav-txt4 {
+    margin-left: 0.625rem;
+}
+
+.nav-txt2:hover, .nav-txt3:hover, .nav-txt4:hover {
+    color: #16ae8f;
+    transition: color ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.home {
+    height: 100vh;
+    background-color: #1ABC9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.home img {
+    width: 15rem;
+    margin-bottom: 1.25rem;
+    margin-top: 5rem;
+}
+
+.sec1-txt1 {
+    font-size: 4rem;
+}
+
+.sec1-txt2 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+}
