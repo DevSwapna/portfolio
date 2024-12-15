@@ -124,8 +124,9 @@ nav {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 1.25rem; /* Adjust gap */
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 1.25rem; /* Space between images */
+    width: 100%;
 }
 
 .images img {
