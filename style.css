@@ -8,15 +8,17 @@ nav {
     color: #fff;
     height: 6.5rem;
     display: flex;
+    justify-content: space-between; /* Adjust alignment */
     align-items: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
     position: fixed;
     width: 100%;
+    padding: 0 1rem; /* Add padding for smaller screens */
+    box-sizing: border-box;
 }
 
 .nav-txt1 {
-    margin-left: 2.25rem;
     font-size: 1.85rem;
 }
 
@@ -25,18 +27,20 @@ nav {
 }
 
 .sections {
-    margin-left: 53.5rem;
-    font-size: 1.05rem;
+    display: flex;
+    gap: 1rem; /* Adjust spacing */
+    font-size: 1rem;
 }
 
-.nav-txt3, .nav-txt4 {
-    margin-left: 0.625rem;
+.nav-txt2, .nav-txt3, .nav-txt4 {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .nav-txt2:hover, .nav-txt3:hover, .nav-txt4:hover {
     color: #16ae8f;
     transition: color ease-in-out 0.3s;
-    cursor: pointer;
 }
 
 .home {
@@ -49,19 +53,116 @@ nav {
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
     color: #fff;
+    text-align: center;
 }
 
 .home img {
-    width: 15rem;
+    width: 10rem; /* Adjust size for responsiveness */
     margin-bottom: 1.25rem;
     margin-top: 5rem;
 }
 
 .sec1-txt1 {
-    font-size: 4rem;
+    font-size: 3rem; /* Adjust font size */
 }
 
 .sec1-txt2 {
     margin-top: 1.25rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjust font size */
+    padding: 0 1rem; /* Add padding for smaller devices */
+    box-sizing: border-box;
+}
+
+.portfolio {
+    color: #2C3E50;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sec2-txt1 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1.25rem; /* Adjust gap */
+}
+
+.images img {
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all effects */
+    width: 100%; /* Make images scale within grid */
+}
+
+.images img:hover {
+    box-shadow: 0 4px 20px rgba(26, 188, 156, 0.9); /* Add a shadow for effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: center; /* Center content */
+    }
+
+    .sections {
+        gap: 0.75rem; /* Reduce gap */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .home img {
+        width: 8rem; /* Adjust image size */
+    }
+
+    .sec1-txt1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .sec1-txt2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .sec2-txt1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        height: auto; /* Allow navigation to expand */
+        padding: 0.5rem; /* Add padding */
+    }
+
+    .sections {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .home img {
+        width: 6rem; /* Adjust size */
+    }
+
+    .sec1-txt1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .sec1-txt2 {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .images {
+        grid-template-columns: 1fr; /* Single-column grid */
+    }
+
+    .sec2-txt1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
 }
